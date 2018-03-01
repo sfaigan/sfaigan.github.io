@@ -64,7 +64,7 @@ p {
   color: #fff;
 }
 .sidebar-wrapper .profile-container {
-  padding: 30px;
+  padding: 15px;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #fff;
@@ -100,7 +100,7 @@ p {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
-  padding: 30px;
+  padding: 15px 30px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
@@ -293,3 +293,10 @@ p {
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
+.contact-container {
+  margin-top: 30px;
+}
+.skills-subsection-title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
