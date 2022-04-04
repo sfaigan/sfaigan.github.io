@@ -3,8 +3,6 @@ const upath = require('upath');
 const sh = require('shelljs');
 const renderPug = require('./render-pug');
 
-const dataJson = require("../src/data.json");
-
 const srcPath = upath.resolve(upath.dirname(__filename), '../src');
 
 sh.find(srcPath).forEach(_processFile);
@@ -16,6 +14,6 @@ function _processFile(filePath) {
         && !filePath.match(/\/pug\/mixins\//)
         && !filePath.match(/\/pug\/layouts\//)
     ) {
-        renderPug(filePath, dataJson);
+        renderPug(filePath);
     }
 }

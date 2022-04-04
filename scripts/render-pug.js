@@ -5,7 +5,7 @@ const pug = require('pug');
 const sh = require('shelljs');
 const prettier = require('prettier');
 
-let renderData = {};
+let renderData = require("../src/data.json");
 
 module.exports = function renderPug(filePath, data) {
     const destPath = filePath.replace(/src\/pug\//, 'dist/').replace(/\.pug$/, '.html');
