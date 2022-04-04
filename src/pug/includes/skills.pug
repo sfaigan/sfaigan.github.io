@@ -9,9 +9,9 @@ section#skills.resume-section
   .resume-section-content
     h2.mb-5 Skills
     .subheading.mb-3 Languages
-    .dev-icons
+    .row.dev-icons
       each lang in data.skills.languages
-        .dev-icon
+        .col-sm.col-6.mb-3.dev-icon
           img(src=`assets/img/svg/${lang.svg}`)
           .label= lang.label
       br
