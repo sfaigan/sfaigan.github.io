@@ -2,6 +2,7 @@
 
 const _ = require('lodash');
 const chokidar = require('chokidar');
+const fs = require('fs');
 const upath = require('upath');
 const renderAssets = require('./render-assets');
 const renderPug = require('./render-pug');
@@ -52,6 +53,10 @@ function _processFile(filePath, watchEvent) {
         return;
     }
 
+    if (filePath.match(/\.json/)) {
+        return _handleDataJson();
+    }
+
     if (filePath.match(/src\/js\//)) {
         return renderScripts();
     }
@@ -74,13 +79,19 @@ function _handlePug(filePath, watchEvent) {
     }
 }
 
-function _renderAllPug() {
+function _renderAllPug(data) {
     console.log('### INFO: Rendering All');
     _.each(allPugFiles, (value, filePath) => {
-        renderPug(filePath);
+        renderPug(filePath, data);
     });
 }
 
 function _handleSCSS() {
     renderSCSS();
+}
+
+function _handleDataJson() {
+    const path = upath.resolve(upath.dirname(__filename), '../src/data.json');
+    const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+    return _renderAllPug(data);
 }

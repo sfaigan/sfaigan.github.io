@@ -1,0 +1,22 @@
+mixin techCol(category, technologies)
+  .col.md-1
+    .subheading2.mb-3= category
+    each tech in technologies
+      = tech
+      br
+
+section#skills.resume-section
+  .resume-section-content
+    h2.mb-5 Skills
+    .subheading.mb-3 Languages
+    .dev-icons
+      each lang in data.skills.languages
+        .dev-icon
+          img(src=`assets/img/svg/${lang.svg}`)
+          .label= lang.label
+      br
+    br
+    .subheading.mb-3 Tools and Technologies
+    .row
+      each techs, category in data.skills.technologies
+        +techCol(category, techs)

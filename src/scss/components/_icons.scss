@@ -2,8 +2,6 @@
 // Icons
 // 
 
-// Styling for the rounded social media links
-
 .social-icons {
     .social-icon {
         display: inline-flex;
@@ -11,23 +9,30 @@
         justify-content: center;
         height: 3.5rem;
         width: 3.5rem;
-        background-color: $gray-700;
         color: $white;
         border-radius: 100%;
         font-size: 1.5rem;
-        margin-right: 1.5rem;
+        text-decoration: none;
 
         &:last-child {
             margin-right: 0;
         }
-
-        &:hover {
-            background-color: $primary;
-        }
     }
 }
 
-// Styling for the development technology icons
 .dev-icons {
-    font-size: 3rem;
+    .dev-icon {
+        text-align: center;
+        .label {
+            font-size: 1rem;
+        }
+        img {
+            width: 64px;
+            height: 64px;
+        }
+        display: inline-block;        
+    }
+    .dev-icon:not(:last-child) {
+        margin-right: 1.5rem;
+    }
 }

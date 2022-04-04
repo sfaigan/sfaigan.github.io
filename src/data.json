@@ -1,0 +1,54 @@
+{
+  "skills": {
+    "languages": [
+      {
+        "label": "JavaScript",
+        "svg": "javascript.svg"
+      },
+      {
+        "label": "TypeScript",
+        "svg": "typescript.svg"
+      },
+      {
+        "label": "Python",
+        "svg": "python.svg"
+      },
+      {
+        "label": "Java",
+        "svg": "java.svg"
+      },
+      {
+        "label": "Kotlin",
+        "svg": "kotlin.svg"
+      },
+      {
+        "label": "C",
+        "svg": "c.svg"
+      },
+      {
+        "label": "Go (Golang)",
+        "svg": "go.svg"
+      },
+      {
+        "label": "SQL (MySQL)",
+        "svg": "mysql.svg"
+      },
+      {
+        "label": "HTML5",
+        "svg": "html5.svg"
+      },
+      {
+        "label": "CSS3",
+        "svg": "css3.svg"
+      }
+    ],
+    "technologies": {
+      "Front-end": ["React", "Redux", "Material UI"],
+      "Back-end": ["Node.js", "Express", "MongoDB", "Mongoose", "Auth0", "ElasticSearch", "Spring Framework"],
+      "Cloud": ["AWS Lambda", "AWS S3", "AWS ECS", "AWS API Gateway"],
+      "DevOps": ["Docker", "Jenkins", "Gradle", "Terraform"],
+      "Testing": ["React Testing Library", "Jest", "Chai", "Mocha", "Jasmine", "Pytest", "JUnit", "Cypress", "Selenium"],
+      "Other": ["Git", "JIRA", "Confluence"]
+    }
+  }
+}
