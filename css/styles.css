@@ -11416,9 +11416,6 @@ p.lead {
   width: 64px;
   height: 64px;
 }
-.dev-icons .dev-icon:not(:last-child) {
-  margin-right: 1.5rem;
-}
 
 section.resume-section {
   display: flex;
